@@ -2,8 +2,14 @@
 
 import sys
 
+def tnum(s):
+    try:
+        return int(s)
+    except:
+        return float(s)
+
 ans = 0.0
 for line in sys.stdin:
-	ans += float(line)
+	ans += tonum(line)
 
 print(ans)
