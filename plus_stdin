@@ -2,7 +2,7 @@
 
 import sys
 
-def tonum(s):
+def tnum(s):
     try:
         return int(s)
     except:
@@ -13,5 +13,6 @@ ans = 0.0
 for line in sys.stdin:
 	line = line.rstrip()
         ans += tonum(line)
+
 
 print(ans)
